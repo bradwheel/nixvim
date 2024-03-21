@@ -28,6 +28,8 @@
         "aarch64-darwin"
       ];
 
+      #debug = true;
+
       imports = [
 	      flake-parts.flakeModules.easyOverlay
       ];
@@ -67,7 +69,7 @@
         formatter = pkgs.alejandra;
 
 	overlayAttrs = {
-		inherit (config.packages) default;
+		neovim = config.packages.default;
 	};
 
         packages = {
