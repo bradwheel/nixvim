@@ -69,7 +69,7 @@
         formatter = pkgs.alejandra;
 
 	overlayAttrs = {
-		neovim = config.packages.default;
+		inherit (config.packages) default;
 	};
 
         packages = {
