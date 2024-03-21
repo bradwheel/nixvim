@@ -28,6 +28,8 @@
         "aarch64-darwin"
       ];
 
+      debug = true;
+
       perSystem = {
         pkgs,
         system,
@@ -44,6 +46,7 @@
           };
         };
         nvim = nixvim'.makeNixvimWithModule nixvimModule;
+        #overlay = final: prev: { neovim = nvim; };
       in {
         checks = {
           # Run `nix flake check .` to verify that your config is not broken
@@ -57,9 +60,12 @@
 	  };
         };
 
-        overlay = final: prev: { neovim = nvim; };
 
         formatter = pkgs.alejandra;
+
+	overlayAttrs = {
+		inherit (config.packages) default;
+	};
 
         packages = {
           # Lets you run `nix run .` to start nixvim
