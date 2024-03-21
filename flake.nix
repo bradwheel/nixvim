@@ -28,9 +28,12 @@
         "aarch64-darwin"
       ];
 
-      debug = true;
+      imports = [
+	      flake-parts.flakeModules.easyOverlay
+      ];
 
       perSystem = {
+      	config,
         pkgs,
         system,
         ...
