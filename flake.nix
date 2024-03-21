@@ -57,6 +57,8 @@
 	  };
         };
 
+        overlay = final: prev: { neovim = nvim; };
+
         formatter = pkgs.alejandra;
 
         packages = {
