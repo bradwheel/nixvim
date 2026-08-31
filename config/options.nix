@@ -1,6 +1,6 @@
 {
   config = {
-    options = {
+    opts = {
       number = true; 					                    # Show line numbers
       showmatch = true; 				                  # Highlight matching parenthesis
       foldmethod = "marker";				              # Enable folding

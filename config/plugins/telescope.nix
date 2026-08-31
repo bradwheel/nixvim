@@ -4,14 +4,19 @@
     keymaps = {
       "<leader>ff" = {
         action = "find_files";
-        desc = "Telescope find files";
+        options = {
+          desc = "Telescope find files";
+          silent = true;
+        };
       };
       "<leader>fg" = {
         action = "live_grep";
-        desc = "Telescope live_grep";
+        options = {
+          desc = "Telescope live_grep";
+          silent = true;
+        };
       };
     };
-    keymapsSilent = true;
     extensions = {
       ui-select = {
         enable = true;
