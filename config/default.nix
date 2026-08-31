@@ -7,6 +7,7 @@
     ./plugins/neo-tree.nix
     ./plugins/telescope.nix
     ./plugins/treesitter.nix
+    ./plugins/web-devicons.nix
 
     ./colorschemes.nix
     ./options.nix

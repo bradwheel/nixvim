@@ -1,6 +1,8 @@
 {
   plugins.lualine = {
     enable = true;
-    theme = "dracula";
+    settings = {
+      options.theme = "dracula";
+    };
   };
 }

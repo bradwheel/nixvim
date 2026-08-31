@@ -2,7 +2,6 @@
   plugins.alpha = {
     enable = true;
     theme = "theta";
-    iconsEnabled = true;
   };
   extraConfigLua = ''
     local theta = require('alpha.themes.theta')

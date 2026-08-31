@@ -42,16 +42,13 @@
       gopls = {
         enable = true;
       };
-      hls = {
-        enable = true;
-      };
       html = {
         enable = true;
       };
       jsonls = {
         enable = true;
       };
-      lua-ls = {
+      lua_ls = {
         enable = true;
         settings = {
           diagnostics = { globals = [ "vim" ]; };
@@ -69,7 +66,7 @@
       pyright = {
         enable = true;
       };
-      tsserver = {
+      ts_ls = {
         enable = true;
       };
     };
